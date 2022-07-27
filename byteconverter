@@ -1,0 +1,20 @@
+public class MegaBytesConverter {
+	
+	public static void printMegaBytAndKilloBytes (int KilloBytes) {
+		
+		
+		if (KilloBytes < 0 ) {
+			System.out.println("Value is Invalid");
+			
+		}else {
+			
+			int convertBytes = KilloBytes;
+			int megaBytes = (convertBytes / 1024);
+			int remainingBytes = (convertBytes % 1024);
+			
+		System.out.println(convertBytes+" KB = " + megaBytes +" MB AND " + remainingBytes +" REMAINING KB");
+			
+		}
+	}
+
+}
